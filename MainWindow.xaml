@@ -1,0 +1,327 @@
+﻿<Window x:Class="Containers.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="4x4" Height="450" Width="800">
+    <Grid x:Name="MainGrid" ShowGridLines="False">
+        <!-- Define the row and column definitions for the grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="Rectangle_00" Grid.Row="0" Grid.Column="0" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_01" Grid.Row="0" Grid.Column="1" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_02" Grid.Row="0" Grid.Column="2" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_03" Grid.Row="0" Grid.Column="3" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_10" Grid.Row="1" Grid.Column="0" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_11" Grid.Row="1" Grid.Column="1" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_12" Grid.Row="1" Grid.Column="2" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_13" Grid.Row="1" Grid.Column="3" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_20" Grid.Row="2" Grid.Column="0" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_21" Grid.Row="2" Grid.Column="1" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_22" Grid.Row="2" Grid.Column="2" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_23" Grid.Row="2" Grid.Column="3" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_30" Grid.Row="3" Grid.Column="0" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_31" Grid.Row="3" Grid.Column="1" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_32" Grid.Row="3" Grid.Column="2" Fill="Black" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Black" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+        <Rectangle x:Name="Rectangle_33" Grid.Row="3" Grid.Column="3" Fill="White" Margin="2">
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="Red" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Rectangle.Fill).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+
+
+
+    </Grid>
+</Window>
