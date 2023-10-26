@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="4x4" Height="450" Width="800">
     <Grid x:Name="MainGrid" ShowGridLines="False">
-        <!-- Define the row and column definitions for the grid -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -320,8 +319,6 @@
                 </EventTrigger>
             </Rectangle.Triggers>
         </Rectangle>
-
-
 
     </Grid>
 </Window>
